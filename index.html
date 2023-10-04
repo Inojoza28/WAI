@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="imgs/Logowai.png" type="image/x-icon">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <title>WAI / Início</title>
+</head>
+<body>
+     
+    <header>
+      
+      <nav class="navbar navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">WHERE AM I?</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Orientação.html">Orientações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contato.html">Contato</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+             <img src="imgs/Logowai.png" alt="logo" style="width: 40px;height: auto;">
+            </span>
+          </div>
+        </div>
+      </nav>
+      
+    </header>
+    <br>
+    <br>
+    <div class="inicio">
+
+    <h1>W.A.I.</h1>
+    <br>
+  <p class="titulo">> O que é programação?</p>
+  
+  <p>A programação é o processo de instruir um computador ou dispositivo eletrônico para executar uma tarefa específica ou resolver um problema.
+     Ela envolve a criação de um conjunto de instruções precisas e detalhadas, chamado de código, que define como o computador deve realizar uma
+      determinada tarefa. Essas instruções são escritas em linguagens de programação, que são linguagens específicas projetadas para serem 
+      compreendidas tanto pelos programadores quanto pelos computadores.
+       A programação é uma habilidade fundamental na computação e desempenha um 
+      papel crucial nos aspectos da tecnologia moderna. Ela é usada para desenvolver software, aplicativos móveis, sites, sistemas
+       operacionais, jogos, inteligência artificial, análise de dados e muito mais.</p>
+
+  <p class="titulo">> O que são Linguagens de Programação?</p>
+
+  <p>Uma linguagem de programação é um conjunto de regras usadas para escrever instruções para que os computadores executem tarefas. 
+    Ele atua como uma ponte entre o pensamento humano e a execução do computador. As linguagens têm <strong>sintaxe</strong> (estrutura)
+     e <strong>semântica</strong> (significado) específicas para a criação de software. Elas variam em complexidade, com linguagens de alto
+      nível sendo amigáveis ao usuário (<span class="L1">Python</span>, <span class="L2">Java</span>), linguagens de baixo nível dando controle
+       sobre o hardware (<span class="L3">Assembly</span>), linguagens de script para automação (<span class="L4">JavaScript</span>,
+        <span class="L5">PHP</span>) e linguagens compiladas para velocidade (<span class="L6">C</span>, <span class="L7">C++</span>).
+         A escolha depende das necessidades do projeto e das preferências do desenvolvedor.</p>
+
+  <p>Caso você esteja incerto sobre por onde começar, permita-me oferecer algumas <a href="Orientação.html" class="L8">Orientações</a> para ajudá-lo
+     a iniciar sua jornada.</p>
+
+
+</div>
+
+
+<style>
+
+.inicio {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px;
+           background-color: #222;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: justify;
+            border: 4px solid #111;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 600px) {
+            .inicio {
+                max-width: 90%;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 21px;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+            .titulo{
+              font-size: 16.5px;
+            }
+        }
+        .L1{
+
+          color: rgb(9, 116, 255);
+
+        }
+        .L2{
+          
+          color: red;
+        }
+        .L3{
+          
+          color: rgb(169, 83, 255);
+        }
+        .L4{
+          color: yellow;
+        }
+        .L5{
+          color: rgb(209, 209, 209);
+        }
+        .L6{
+          color: rgb(255, 83, 163);
+        }
+        .L7{
+          color: aquamarine;
+        }
+        .L8{
+          color: rgb(34, 226, 136);
+          text-decoration-color: rgb(30, 194, 30);
+          
+        }
+</style>
+
+<br>
+<br>
+<br>
+
+<footer>
+<div class="footer">
+<div class="rowend">
+  <a href="https://www.linkedin.com/in/carlos-gabriel-inojoza-925444286/"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.instagram.com/dev_inojoza_/"><i class="fa fa-instagram"></i></a>
+<a href="https://github.com/Inojoza28"><i class="fa fa-github"></i></a>
+
+</div>
+
+<div class="rowend">
+<ul>
+<li><a href="contato.html">Contato</a></li>
+<li><a href="sobre.html">Sobre Nós</a></li>
+<li><a href="Orientação.html">Orientações</a></li>
+<li><a href="https://www.instagram.com/carlos.gabriiel/" target="_blank" class="fa fa-instagram"> Carlos.gabriiel</a></li>
+<li><a href="index.html">W.A.I</a></li>
+</ul>
+</div>
+
+
+<div class="rowend">
+
+<p class="emailpessoal">E-mail de contato: carlosginojoza.gmail.com</p>
+  <br>
+Carlos Gabriel Copyright © 2023 WAI - Todos os direitos reservados
+
+</div>
+</div>
+</footer>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+<!-- feito por Carlos Gabriel J. I. Santos -->
+</html>

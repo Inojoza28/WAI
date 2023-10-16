@@ -31,7 +31,7 @@ margin-left: 3rem;
   color: #222;
   font-weight: bold;
   font-size: 40px;
-  
+  text-shadow: 2px 2px 4px #fff;
 }
 
 
@@ -48,7 +48,6 @@ margin-left: 3rem;
   margin: 10px;
 }
 .nav-item{
-  
   padding: 5px;
 }
 

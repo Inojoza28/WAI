@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
      
     <header>
       
-      <nav class="navbar navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg navbar custom-bg-color border-body" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">WHERE AM I?</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,8 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                <a class=
+                "nav-link" aria-current="page" href="index.html">Início</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="sobre.html">Sobre</a>
@@ -37,6 +38,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="Orientação.html">Orientações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="quiz.html">Quiz</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="contato.html">Contato</a>
@@ -82,7 +86,7 @@
 
 <br>
 <div class="centrar-botao"></div>
-     <a href="script.html"><button type="button" class="btn btn-success btn-lg" style=" margin: 0 auto;">Descubra Mais</button></a>
+     <a href="script.html"><button type="button" class="btn btn-dark btn-lg" style=" margin: 0 auto;">Descubra Mais</button></a>
     </div>
 </div>
 
@@ -94,7 +98,7 @@
 
     .btn {
       padding: 10px 20px; 
-      background-color: #1b5231; 
+      background-color: #7b6ed6; 
       color: #fff; 
       text-decoration: none; 
       border: 1px solid #111; 
@@ -103,16 +107,19 @@
       cursor: pointer; 
     }
 
+    .btn:hover{
+      background-color: #544a94;
+    }
+
 
 .inicio {
             max-width: 800px;
             margin: 0 auto;
             padding: 70px;
-           background-color: #222;
-            box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+            background-color: #222;
             border-radius: 10px;
             text-align: justify;
-            border: 4px solid #111;
+            border: 4px solid #111111ce; /* Borda rosa */
         }
 
         h1 {
@@ -189,42 +196,40 @@
 <br>
 
 <footer>
-<div class="footer">
-<div class="rowend">
-  <a href="https://www.linkedin.com/in/carlos-gabriel-inojoza-925444286/"><i class="fa fa-linkedin"></i></a>
-<a href="https://www.instagram.com/dev_inojoza_/"><i class="fa fa-instagram"></i></a>
-<a href="https://github.com/Inojoza28"><i class="fa fa-github"></i></a>
-
-</div>
-
-<div class="rowend">
-<ul>
-<li><a href="contato.html">Contato</a></li>
-<li><a href="sobre.html">Sobre Nós</a></li>
-<li><a href="Orientação.html">Orientações</a></li>
-<li><a href="script.html">Definições</a></li>
-<li><a href="https://www.instagram.com/carlos.gabriiel/" target="_blank" class="fa fa-instagram"> Carlos.gabriiel</a></li>
-<li><a href="index.html">W.A.I</a></li>
-</ul>
-</div>
-
-
-<div class="rowend">
-
-<p class="emailpessoal">E-mail de contato: carlosginojoza@gmail.com</p>
-  <br>
-Carlos Gabriel Copyright © 2023 WAI - Todos os direitos reservados
-
-</div>
-</div>
-</footer>
-
-
-
-
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
-
-<!-- feito por Carlos Gabriel J. I. Santos -->
-</html>
+    <div class="footer">
+    <div class="rowend">
+      <a href="https://www.linkedin.com/in/carlos-gabriel-inojoza-925444286/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/dev_inojoza_/"><i class="fa fa-instagram"></i></a>
+    <a href="https://github.com/Inojoza28"><i class="fa fa-github"></i></a>
+    
+    </div>
+    
+    <div class="rowend">
+    <ul>
+    <li><a href="contato.html">Contato</a></li>
+    <li><a href="sobre.html">Sobre Nós</a></li>
+    <li><a href="Orientação.html">Orientações</a></li>
+    <li><a href="script.html">Definições</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="index.html">W.A.I</a></li>
+    </ul>
+    </div>
+    
+    
+    <div class="rowend">
+    
+    <p class="emailpessoal">E-mail de contato: carlosginojoza@gmail.com</p>
+    
+      <p class="emailpessoal">Instagram pessoal: <a href="https://www.instagram.com/carlos.gabriiel/" target="_blank" class="fa fa-instagram"> Carlos.gabriiel</a></p>
+      <br>
+    Carlos Gabriel Copyright © 2023 WAI - Todos os direitos reservados
+    
+    </div>
+    </div>
+    </footer>
+       <script src="script.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+    
+    <!-- feito por Carlos Gabriel J. I. Santos -->
+    </html>

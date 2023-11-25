@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
      
   <header>
       
-    <nav class="navbar navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar custom-bg-color border-body" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">WHERE AM I?</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,6 +37,9 @@
               </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="Orientação.html">Orientações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="quiz.html">Quiz</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="contato.html">Contato</a>
@@ -61,7 +64,7 @@
   <h1>Frontend, Backend e Fullstack</h1>
   <br>
   <p>Na programação, os desenvolvedores são categorizados como frontend, backend e fullstack. Ser um desenvolvedor frontend, backend e fullstack refere-se a diferentes papéis e responsabilidades no campo do desenvolvimento de software.</p>
-  <p><strong>Frontend:</strong> Desenvolvedor responsável por criar a interface do usuário utilizando linguagens e tecnologias como <span style="color: #198754;">HTML</span>, <span style="color: #198754;">CSS</span> e <span style="color: #ffc107;">JavaScript.</span> Ele trabalha na parte visual e interativa da aplicação, cuidando dos elementos gráficos e da usabilidade.</p>
+  <p><strong>Frontend:</strong> Desenvolvedor responsável por criar a interface do usuário utilizando linguagens e tecnologias como <span style="color: #198754;">HTML</span>, <span style="color: #198754;">CSS</span> e <span style="color: #ffc107;">JavaScript</span>. Ele trabalha na parte visual e interativa da aplicação, cuidando dos elementos gráficos e da usabilidade.</p>
   <p><strong>Backend:</strong> Desenvolvedor responsável pela parte lógica e funcional da aplicação. Ele trabalha com linguagens de programação como <span style="color: rgb(238, 51, 51)">Java</span>, <span style="color: #0d6efd;">Python</span>, <span style="color: rgb(255, 84, 32);">Ruby</span>, <span style="color: rgb(209, 209, 209);">PHP</span>, entre outras, para criar e gerenciar os servidores, bancos de dados e todas as funcionalidades da aplicação que acontecem no servidor.</p>
   <p><strong>Fullstack:</strong> Desenvolvedor que possui habilidades tanto no frontend quanto no backend. É capaz de atuar nas duas frentes, criando a interface do usuário e implementando as funcionalidades do servidor. Ele possui conhecimentos em linguagens e tecnologias tanto do frontend quanto do backend.</p>
 </div>
@@ -154,10 +157,7 @@
 
 <style>
 
-body{
-  background: linear-gradient(to bottom, rgb(0 250 133 / 93%),rgb(0 250 133 / 93%),rgb(30, 194, 30), rgb(30, 194, 30),
-  rgb(30, 194, 30), rgb(30, 194, 30),rgb(30, 194, 30),rgb(30, 194, 30), rgb(30, 194, 30),rgb(30, 194, 30), rgb(1, 80, 25), black);
-}
+
 
 .container {
     background-color: #222;
@@ -224,14 +224,14 @@ body{
     font-size: 24px;
     margin-top: 20px;
     text-align: center;
-    background-color: rgba(0, 255, 0, 0.2);
+    background-color: #a07aff83;
     border-radius: 8px;
     padding: 3.5px;
 }
 
 .linguagens {
     margin-top: 40px;
-    text-shadow: 2px 2px 4px #fff;
+    text-shadow: 2px 2px 4px #ffffffc5;
     background-color:rgba(255, 255, 255, 0.432);
     -webkit-background-clip: text;
       background-clip: text;
@@ -272,12 +272,12 @@ ol li {
     @media (max-width: 768px) {
     .container {
         padding: 30px;
-        max-width: 90%;
+        max-width: 91%;
         padding: 10px;
     }
     .containers{
         padding: 30px;
-        max-width: 90%;
+        max-width: 91%;
         padding: 10px;
     
     }
@@ -305,14 +305,14 @@ ol li {
     }
     
     .orien{
-               font-size: 30px;
+               font-size: 29px;
                margin-top: 2px;
                padding: auto;
                
             }
             .dicas{
             padding: auto;
-            max-width: 90%;
+            max-width: 93%;
        
               
             }
@@ -326,46 +326,42 @@ ol li {
 </style>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="script.js"></script>
-
-
 
 <footer>
-<div class="footer">
-<div class="rowend">
-  <a href="https://www.linkedin.com/in/carlos-gabriel-inojoza-925444286/"><i class="fa fa-linkedin"></i></a>
-<a href="https://www.instagram.com/dev_inojoza_/"><i class="fa fa-instagram"></i></a>
-<a href="https://github.com/Inojoza28"><i class="fa fa-github"></i></a>
-
-</div>
-
-<div class="rowend">
-<ul>
-<li><a href="contato.html">Contato</a></li>
-<li><a href="sobre.html">Sobre Nós</a></li>
-<li><a href="Orientação.html">Orientações</a></li>
-<li><a href="script.html">Definições</a></li>
-<li><a href="https://www.instagram.com/carlos.gabriiel/" target="_blank" class="fa fa-instagram"> Carlos.gabriiel</a></li>
-<li><a href="index.html">W.A.I</a></li>
-</ul>
-</div>
-
-
-<div class="rowend">
-
-<p class="emailpessoal">E-mail de contato: carlosginojoza@gmail.com</p>
-  <br>
-Carlos Gabriel Copyright © 2023 WAI - Todos os direitos reservados
-
-</div>
-</div>
-</footer>
-
-
-
-</body>
-       
-<!-- feito por Carlos Gabriel J. I. Santos -->
-
-</html>
+  <div class="footer">
+  <div class="rowend">
+    <a href="https://www.linkedin.com/in/carlos-gabriel-inojoza-925444286/"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.instagram.com/dev_inojoza_/"><i class="fa fa-instagram"></i></a>
+  <a href="https://github.com/Inojoza28"><i class="fa fa-github"></i></a>
+  
+  </div>
+  
+  <div class="rowend">
+  <ul>
+  <li><a href="contato.html">Contato</a></li>
+  <li><a href="sobre.html">Sobre Nós</a></li>
+  <li><a href="Orientação.html">Orientações</a></li>
+  <li><a href="script.html">Definições</a></li>
+  <li><a href="quiz.html">Quiz</a></li>
+  <li><a href="index.html">W.A.I</a></li>
+  </ul>
+  </div>
+  
+  
+  <div class="rowend">
+  
+  <p class="emailpessoal">E-mail de contato: carlosginojoza@gmail.com</p>
+  
+    <p class="emailpessoal">Instagram pessoal: <a href="https://www.instagram.com/carlos.gabriiel/" target="_blank" class="fa fa-instagram"> Carlos.gabriiel</a></p>
+    <br>
+  Carlos Gabriel Copyright © 2023 WAI - Todos os direitos reservados
+  
+  </div>
+  </div>
+  </footer>
+      <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+  
+  <!-- feito por Carlos Gabriel J. I. Santos -->
+  </html>

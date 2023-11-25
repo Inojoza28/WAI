@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="imgs/Logowai.png" type="image/x-icon">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <title>WAI / Quiz</title>
+</head>
+<body>
+     
+  <header>
+      
+    <nav class="navbar navbar-expand-lg navbar custom-bg-color border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">WHERE AM I?</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="script.html">Script</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Orientação.html">Orientações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="contato.html">Contato</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+           <img src="imgs/Logowai.png" alt="logo" style="width: 42.5px;height: auto;">
+          </span>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+<br>
+<br>
+</head>
+<body>
+
+<h1 class="orien"><i>Quiz <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-file-earmark-code" viewBox="0 0 16 16">
+  <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+  <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z"/>
+</svg></i></h1>
+<br>
+<br>
+<div class="caixa-de-texto">
+  <h1  class="Teste">Autoconhecimento</h1>
+  <br>
+  <p class="descricaoquiz">Preparamos um quiz exclusivo para você que ainda tem dúvidas sobre qual área da programação se encaixa melhor com o seu perfil. Nosso objetivo é ajudá-lo a definir com base em seus gostos e habilidades, se você tem mais afinidade com o desenvolvimento <b>Frontend</b> ou <b>Backend</b>.</p>
+  
+</div>
+
+
+<div id="quiz-container">
+  <h1 style="color: #111;">Quiz de Desenvolvimento</h1>
+  <div id="question-container" style="display: none;">
+      <p id="question-number"></p>
+      <p id="question-text"></p>
+      <form id="answer-form">
+          <label><input type="radio" name="answer" value="frontend"> Alternativa A</label>
+          <label><input type="radio" name="answer" value="backend"> Alternativa B</label>
+          <br>
+          <p id="error-message" class="error-message"></p>
+          <br>
+          <button class="nextQst" type="button" onclick="nextQuestion()">Próxima Pergunta</button>
+      </form>
+  </div>
+  <div id="result-container" style="display: none;">
+      <h2>Resultado:</h2>
+      <br>
+      <p id="result-text"></p>
+      <br>
+      <div id="percentage-container"></div>
+      <button class="reiniciar" onclick="restartQuiz()">Reiniciar Quiz</button>
+      <a class="fecharquiz" href="quiz.html" onclick="closeQuiz()"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+      </svg>Fechar Quiz</a>
+  </div>
+  <button id="start-button" onclick="startQuiz()">Começar</button>
+</div>
+
+<style>
+
+  p{
+   font-size: 17px;
+  }
+  .descricaoquiz{
+    color: #fff;
+     font-size: 17px;
+  }
+    #quiz-container {
+        max-width: 600px;
+        margin: 0 auto;
+        border: 4px solid #111;
+        padding: 70px;
+        background-color: rgba(255, 255, 255, 0.733);
+        border-radius: 10px;
+    }
+    #result-container {
+        display: none;
+    }
+    .error-message {
+        color: red;
+        background-color: aliceblue;
+        font-weight: bold;
+        
+    }
+    .nextQst{
+      padding: 7px 11px;
+        font-size: 16px;
+        background-color: #5caa1c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .nextQst:hover {
+        background-color: #0f6622;
+    }
+
+  .reiniciar{
+    padding: 7px 11px;
+        font-size: 16px;
+        background-color: #5caa1c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  }
+  .reiniciar:hover {
+        background-color: #0f6622;
+    }
+    .caixa-de-texto {
+        max-width: 800px;
+        margin: auto;
+        padding: 25px;
+        background-color: #222;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: justify;
+        border: 4px solid #111;
+}
+.fecharquiz{
+  margin-left: 20px;
+  color: #222;
+  font-size: 14px;
+}
+
+.Teste{
+  color: #fff; 
+  font-size: 24px;
+
+}
+
+#start-button {
+  margin-top: 14px;
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse sobre o botão */
+}
+
+
+#start-button:hover {
+    background-color: #45a049; /* Cor de fundo mais escura ao passar o mouse sobre o botão */
+}
+@media screen and (max-width: 600px) {
+        .caixa-de-texto {
+            max-width: 90%;
+            padding: 10px;
+        }
+
+       .Teste{
+        font-size: 22px;
+       }
+        p {
+            font-size: 16px;
+        }
+        .descricaoquiz{
+          font-size: 16.7px;
+        }
+        #quiz-container{
+          max-width: 92%;
+            padding: 45px;
+        }
+    }
+
+</style>
+
+<br><br><br><br><br>
+
+<footer>
+    <div class="footer">
+    <div class="rowend">
+      <a href="https://www.linkedin.com/in/carlos-gabriel-inojoza-925444286/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/dev_inojoza_/"><i class="fa fa-instagram"></i></a>
+    <a href="https://github.com/Inojoza28"><i class="fa fa-github"></i></a>
+    
+    </div>
+    
+    <div class="rowend">
+    <ul>
+    <li><a href="contato.html">Contato</a></li>
+    <li><a href="sobre.html">Sobre Nós</a></li>
+    <li><a href="Orientação.html">Orientações</a></li>
+    <li><a href="script.html">Definições</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="index.html">W.A.I</a></li>
+    </ul>
+    </div>
+    
+    
+    <div class="rowend">
+    
+    <p class="emailpessoal">E-mail de contato: carlosginojoza@gmail.com</p>
+    
+      <p class="emailpessoal">Instagram pessoal: <a href="https://www.instagram.com/carlos.gabriiel/" target="_blank" class="fa fa-instagram"> Carlos.gabriiel</a></p>
+      <br>
+    Carlos Gabriel Copyright © 2023 WAI - Todos os direitos reservados
+    
+    </div>
+    </div>
+    </footer>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+    
+    <!-- feito por Carlos Gabriel J. I. Santos -->
+    </html>

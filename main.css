@@ -136,5 +136,24 @@ body{
   }
 
   }
-
+  @media (max-width: 568px) {
+    .footer {
+      padding: auto;
+    }
+  
+    .footer .rowend:first-child {
+      padding-top: 17px;
+    }
+  
+    .footer .rowend {
+      text-align: center;
+    }
+  
+    .footer .rowend ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+    }
+  }
 /* feito por Carlos Gabriel J. I. Santos */
